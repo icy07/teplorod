@@ -8,19 +8,19 @@
 		<link rel="preload" href="./assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Статья</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1763228937125"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1763228937125">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1765116784020"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1765116784020">
 	</head>
 	<body>
 		<div class="wrapper">
-			<header data-fls-header="" data-fls-header-scroll="" class="header">
+			<header data-fls-header="" data-fls-lp="" data-fls-header-scroll="" class="header">
 				<div class="header__container">
 					<div class="header__wrapper">
 						<div class="header__logo-block">
 							<a href="index.html" class="header__logo">
 								<img src="./assets/img/logo-white.svg" alt="Теплород">
 							</a>
-							<div class="header__info">
+							<div class="header__info" data-fls-dynamic=".menu__body, 720, 0">
 								<p>
 									твердотопливные котлы
 									<br>
@@ -50,18 +50,19 @@
 									</li>
 								</ul>
 							</nav>
-							<button type="button" class="menu__icon icon-menu">
+							<div class="header__socials" data-fls-dynamic=".menu__body, 720, 2">
+								<a href="#" target="_blank" class="header__social --icon-max"></a>
+								<a href="#" target="_blank" class="header__social --icon-phone"></a>
+								<a href="#" target="_blank" class="header__social --icon-tg"></a>
+							</div>
+							<div class="header__order">
+								<a href="tel:+88001013377" class="header__phone">+8 800 101 33 77</a>
+								<button class="header__button button" data-fls-button="" data-fls-popup-link="call">Заказать
+							звонок</button>
+							</div>
+							<button type="button" class="menu__icon icon-menu" data-fls-menu="">
 								<span></span>
 							</button>
-						</div>
-						<div class="header__socials">
-							<a href="#" target="_blank" class="header__social --icon-max"></a>
-							<a href="#" target="_blank" class="header__social --icon-phone"></a>
-							<a href="#" target="_blank" class="header__social --icon-tg"></a>
-						</div>
-						<div class="header__order">
-							<a href="tel:+88001013377" class="header__phone">+8 800 101 33 77</a>
-							<button class="header__button button" data-fls-button="">Заказать звонок</button>
 						</div>
 					</div>
 				</div>
@@ -172,11 +173,7 @@
 			</section>
 			<section class="map" data-fls-mapblock="">
 				<div class="map__map">
-					<picture>
-						<source media="(max-width: 600px)" srcset="./assets/img/map-600.webp" type="image/webp">
-						<source media="(max-width: 1200px)" srcset="./assets/img/map-1200.webp" type="image/webp">
-						<img alt="Карта" src="./assets/img/map.webp">
-					</picture>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3046e06e0d0d621acb23929f1e71e5996a9f9bdce6f1f5f325a8912bd82019f7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 				</div>
 				<div class="map__container">
 					<div class="map__main">
@@ -187,7 +184,7 @@
 							</li>
 							<li class="map__item">
 								<a href="tel:+88001013377" class="--icon-phone2">+8 800 101 33 77</a>
-								<a href="#" class="map__call-btn button button--yellow">Заказать звонок</a>
+								<a href="#" class="map__call-btn button button--yellow" data-fls-popup-link="call">Заказать звонок</a>
 							</li>
 						</ul>
 						<div class="map__socials">
@@ -220,6 +217,7 @@
 						</ul>
 					</div>
 					<div class="footer__bottom">
+						<p>Сайт использует модуль Яндекс.Метрика</p>
 						<a href="https://web-ra.com/" target="_blank">
 							<span>Разработано в Web-ra.com</span>
 							<img src="./assets/img/webra.svg" alt="Webra">
@@ -228,6 +226,48 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+		<div data-fls-popup="call" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+					<div data-fls-popup-content="" class="popup__text">
+						<form action="#" class="popup__form form" data-fls-form="ajax">
+							<p class="form__title title">Заказать звонок</p>
+							<div class="form__main">
+								<input data-fls-input="" autocomplete="off" type="text" name="form[]" required data-error="" placeholder="Ваше имя*" class="input form__input">
+								<input data-fls-input="" autocomplete="off" type="text" name="form[]" required data-error="" placeholder="+7 (___) ___ - __ - __" data-fls-input-mask="+7 (999) 999 - 99 - 99" class="input form__input">
+								<button type="submit" class="form__btn button button--yellow button--18">Заказать звонок</button>
+								<p class="form__agreement">
+									Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с
+									<a href="#" target="_blank">политикой конфиденциальности</a>
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="product" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+					<div data-fls-popup-content="" class="popup__text">
+						<form action="#" class="popup__form form" data-fls-form="ajax">
+							<p class="form__title title">Заказать товар</p>
+							<div class="form__main">
+								<input data-fls-input="" autocomplete="off" type="text" name="form[]" required data-error="" placeholder="Ваше имя*" class="input form__input">
+								<input data-fls-input="" autocomplete="off" type="text" name="form[]" required data-error="" placeholder="+7 (___) ___ - __ - __" data-fls-input-mask="+7 (999) 999 - 99 - 99" class="input form__input">
+								<button type="submit" class="form__btn button button--yellow button--18">Заказать</button>
+								<p class="form__agreement">
+									Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с
+									<a href="#" target="_blank">политикой конфиденциальности</a>
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

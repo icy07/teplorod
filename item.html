@@ -8,19 +8,19 @@
 		<link rel="preload" href="./assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Котел длительного горения ТЕПЛОРОД Т-15</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1763228937127"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1763228937127">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1765116784022"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1765116784022">
 	</head>
 	<body>
 		<div class="wrapper">
-			<header data-fls-header="" class="header --header-scroll">
+			<header data-fls-header="" data-fls-lp="" class="header --header-scroll">
 				<div class="header__container">
 					<div class="header__wrapper">
 						<div class="header__logo-block">
 							<a href="index.html" class="header__logo">
 								<img src="./assets/img/logo-white.svg" alt="Теплород">
 							</a>
-							<div class="header__info">
+							<div class="header__info" data-fls-dynamic=".menu__body, 720, 0">
 								<p>
 									твердотопливные котлы
 									<br>
@@ -50,18 +50,19 @@
 									</li>
 								</ul>
 							</nav>
-							<button type="button" class="menu__icon icon-menu">
+							<div class="header__socials" data-fls-dynamic=".menu__body, 720, 2">
+								<a href="#" target="_blank" class="header__social --icon-max"></a>
+								<a href="#" target="_blank" class="header__social --icon-phone"></a>
+								<a href="#" target="_blank" class="header__social --icon-tg"></a>
+							</div>
+							<div class="header__order">
+								<a href="tel:+88001013377" class="header__phone">+8 800 101 33 77</a>
+								<button class="header__button button" data-fls-button="" data-fls-popup-link="call">Заказать
+							звонок</button>
+							</div>
+							<button type="button" class="menu__icon icon-menu" data-fls-menu="">
 								<span></span>
 							</button>
-						</div>
-						<div class="header__socials">
-							<a href="#" target="_blank" class="header__social --icon-max"></a>
-							<a href="#" target="_blank" class="header__social --icon-phone"></a>
-							<a href="#" target="_blank" class="header__social --icon-tg"></a>
-						</div>
-						<div class="header__order">
-							<a href="tel:+88001013377" class="header__phone">+8 800 101 33 77</a>
-							<button class="header__button button" data-fls-button="">Заказать звонок</button>
 						</div>
 					</div>
 				</div>
@@ -143,63 +144,42 @@
 							<div class="item__info">
 								<ul class="item__list">
 									<li class="item__item">
-										<div>
-											<img src="./assets/img/icons/scale.svg" alt="Icon">
-										</div>
 										<p>
 											<span>Площадь отапливаемого помещения:</span>
 											150квм
 										</p>
 									</li>
 									<li class="item__item">
-										<div>
-											<img src="./assets/img/icons/fire.svg" alt="Icon">
-										</div>
 										<p>
 											<span>Мощность:</span>
 											15кВт
 										</p>
 									</li>
 									<li class="item__item">
-										<div>
-											<img src="./assets/img/icons/ruler.svg" alt="Icon">
-										</div>
 										<p>
 											<span>Высота:</span>
 											66см
 										</p>
 									</li>
 									<li class="item__item">
-										<div>
-											<img src="./assets/img/icons/scale-round.svg" alt="Icon">
-										</div>
 										<p>
 											<span>Диаметр:</span>
 											50см
 										</p>
 									</li>
 									<li class="item__item">
-										<div>
-											<img src="./assets/img/icons/kg.svg" alt="Icon">
-										</div>
 										<p>
 											<span>Вес:</span>
 											50кг
 										</p>
 									</li>
 									<li class="item__item">
-										<div>
-											<img src="./assets/img/icons/coal.svg" alt="Icon">
-										</div>
 										<p>
 											<span>Вес загружаемого угля:</span>
 											60-80кг
 										</p>
 									</li>
 									<li class="item__item">
-										<div>
-											<img src="./assets/img/icons/home.svg" alt="Icon">
-										</div>
 										<p>
 											<span>Назначение:</span>
 											для жилого и нежилого помещения
@@ -208,7 +188,7 @@
 								</ul>
 								<div class="item__price-block">
 									<p class="item__price">от 119 000Р</p>
-									<a href="#" data-fls-button="" class="item__btn button button--yellow button--r12 button--24">Заказать</a>
+									<a href="#" data-fls-button="" class="item__btn button button--yellow button--r12 button--24" data-fls-popup-link="product">Заказать</a>
 								</div>
 							</div>
 							<div class="item__options">
@@ -255,70 +235,60 @@
 								</div>
 								<div class="tabs__info-blocks">
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/fire.svg" alt="Icon">
 										<p>
 											<span>Мощность:</span>
 											<span>15кВт</span>
 										</p>
 									</div>
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/scale.svg" alt="Icon">
 										<p>
 											<span>Отапливаемая площадь:</span>
 											<span>50м2</span>
 										</p>
 									</div>
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/scale.svg" alt="Icon">
 										<p>
 											<span>Отапливаемый объем:</span>
 											<span>75-150м3</span>
 										</p>
 									</div>
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/unscale.svg" alt="Icon">
 										<p>
 											<span>Габариты топочной камеры, Д*В:</span>
 											<span>400*550мм</span>
 										</p>
 									</div>
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/wood.svg" alt="Icon">
 										<p>
 											<span>Вмещается дров:</span>
 											<span>15кг</span>
 										</p>
 									</div>
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/ruler_h.svg" alt="Icon">
 										<p>
 											<span>Длина дров:</span>
 											<span>30см</span>
 										</p>
 									</div>
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/clock.svg" alt="Icon">
 										<p>
 											<span>Продолжительность горения при одной закладке дров при номинальном режиме:</span>
 											<span>до 24 часов</span>
 										</p>
 									</div>
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/gear.svg" alt="Icon">
 										<p>
 											<span>Коэффициент полезного действия:</span>
 											<span>75%</span>
 										</p>
 									</div>
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/scale-round.svg" alt="Icon">
 										<p>
 											<span>Диаметр дымохода:</span>
 											<span>110мм</span>
 										</p>
 									</div>
 									<div class="tabs__info-block">
-										<img src="./assets/img/icons/fire.svg" alt="Icon">
 										<p>
 											<span>ТЭГ, комплек:</span>
 											<span>нет</span>
@@ -425,11 +395,7 @@
 			</section>
 			<section class="map" data-fls-mapblock="">
 				<div class="map__map">
-					<picture>
-						<source media="(max-width: 600px)" srcset="./assets/img/map-600.webp" type="image/webp">
-						<source media="(max-width: 1200px)" srcset="./assets/img/map-1200.webp" type="image/webp">
-						<img alt="Карта" src="./assets/img/map.webp">
-					</picture>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3046e06e0d0d621acb23929f1e71e5996a9f9bdce6f1f5f325a8912bd82019f7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 				</div>
 				<div class="map__container">
 					<div class="map__main">
@@ -440,7 +406,7 @@
 							</li>
 							<li class="map__item">
 								<a href="tel:+88001013377" class="--icon-phone2">+8 800 101 33 77</a>
-								<a href="#" class="map__call-btn button button--yellow">Заказать звонок</a>
+								<a href="#" class="map__call-btn button button--yellow" data-fls-popup-link="call">Заказать звонок</a>
 							</li>
 						</ul>
 						<div class="map__socials">
@@ -473,6 +439,7 @@
 						</ul>
 					</div>
 					<div class="footer__bottom">
+						<p>Сайт использует модуль Яндекс.Метрика</p>
 						<a href="https://web-ra.com/" target="_blank">
 							<span>Разработано в Web-ra.com</span>
 							<img src="./assets/img/webra.svg" alt="Webra">
@@ -481,6 +448,48 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+		<div data-fls-popup="call" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+					<div data-fls-popup-content="" class="popup__text">
+						<form action="#" class="popup__form form" data-fls-form="ajax">
+							<p class="form__title title">Заказать звонок</p>
+							<div class="form__main">
+								<input data-fls-input="" autocomplete="off" type="text" name="form[]" required data-error="" placeholder="Ваше имя*" class="input form__input">
+								<input data-fls-input="" autocomplete="off" type="text" name="form[]" required data-error="" placeholder="+7 (___) ___ - __ - __" data-fls-input-mask="+7 (999) 999 - 99 - 99" class="input form__input">
+								<button type="submit" class="form__btn button button--yellow button--18">Заказать звонок</button>
+								<p class="form__agreement">
+									Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с
+									<a href="#" target="_blank">политикой конфиденциальности</a>
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="product" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+					<div data-fls-popup-content="" class="popup__text">
+						<form action="#" class="popup__form form" data-fls-form="ajax">
+							<p class="form__title title">Заказать товар</p>
+							<div class="form__main">
+								<input data-fls-input="" autocomplete="off" type="text" name="form[]" required data-error="" placeholder="Ваше имя*" class="input form__input">
+								<input data-fls-input="" autocomplete="off" type="text" name="form[]" required data-error="" placeholder="+7 (___) ___ - __ - __" data-fls-input-mask="+7 (999) 999 - 99 - 99" class="input form__input">
+								<button type="submit" class="form__btn button button--yellow button--18">Заказать</button>
+								<p class="form__agreement">
+									Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с
+									<a href="#" target="_blank">политикой конфиденциальности</a>
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
